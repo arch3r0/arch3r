@@ -1,3 +1,4 @@
+let counter = 0
 const Color = {
   White: "255, 255, 255",
   Steel: "96, 125, 139",
@@ -459,7 +460,8 @@ const Balloon = {
     Splatter.generate(balloon.color);
     
     State.timestamps.popAt = poppedAt;
-    
+    counter = counter +1
+    document.getElementById('counter').innerHTML = `Licznik : ${counter.toString()}`
     State.balloons = State.balloons.map(b => {
       if(b.id === balloon.id && b.poppedAt === null) {
         b.poppedAt = poppedAt;

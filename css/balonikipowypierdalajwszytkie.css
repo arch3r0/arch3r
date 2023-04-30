@@ -52,3 +52,21 @@ a:hover, a:focus, #youtube-link:hover, #youtube-link:focus {
   text-decoration: none;
   z-index: 2;
 }
+
+.counter-text {
+  border-radius: 4px;
+  bottom: 0px;
+  color: white;
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  left: 0px;
+  margin: 20px 15px;
+  padding: 10px 15px;
+  pointer-events: all;
+  position: absolute;  
+  text-align: center;
+  text-decoration: none;
+  z-index: 2;
+}
+
